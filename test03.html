@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+</head>
+<body>
+   <h2>The Pluralizer</h2>
+   <p id="ausgabe">Output</p>
+   <script>
+      function pluralize(zahl, wort) {
+         if (zahl == 1) return zahl + " " + wort;
+         else return zahl + " " + wort + "s";
+      }
+
+      let msg = "<br>";
+      msg += pluralize(1, "cat") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += pluralize(2, "cat") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += pluralize(1, "dog") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += pluralize(3, "dog") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      
+   </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h2>Hello World Function</h2>
+   <p id="ausgabe">Output</p>
+   <script>
+      function helloWorld (lang) {
+         if (lang == "de") {
+            return "Hallo Welt";
+         }
+         else if (lang == "it") {
+            return "Ciao Mondo";
+         }
+         else if (lang == "fr") {
+            return "Salut Monde";
+         }
+         else return "Hello World";
+      }
+      let msg = "<br>";
+      msg += helloWorld("fr") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += helloWorld("it") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += helloWorld("de") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += helloWorld("en") + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      
+   </script>
+</body>
+</html>

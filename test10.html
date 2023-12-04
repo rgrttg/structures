@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+</head>
+<body>
+   <h2>The even/odd reporter</h2>
+   <p id="ausgabe">output</p>
+   <script>
+      let msg = "<br>";
+      for (let l=0; l <= 20; l++) {
+         if (l%2 == 0) {
+            msg += "gerade" + "<br>";
+         }
+         else {
+            msg += "ungerade" + "<br>";
+         }
+      }
+      document.getElementById("ausgabe").innerHTML = msg;
+   </script>
+</body>
+</html>

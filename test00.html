@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+<body>
+    <h2>Uberschrift</h2>
+    <p id="ausgabe"></p>
+    <script>
+        function greaterNum (a, b) {
+            if (a > b) {
+                return a;
+            }
+            else if (b > a) {
+                return b;
+            }
+            else return 0; // Zahlen sind gleich
+        }
+        let msg = "<br>";
+        let zahl1 = 8;
+        let zahl2 = 15;
+        let ergebnis = greaterNum(zahl1, zahl2);
+        msg += "Die gr&ouml;ssere Zahl von " + zahl1 + " und " + zahl2 + " ist: " + ergebnis + "<br>";
+        document.getElementById("ausgabe").innerHTML = msg;
+        
+
+        zahl1 = 9;
+        zahl2 = 7;
+        ergebnis = greaterNum(zahl1, zahl2);
+        msg += "Die gr&ouml;ssere Zahl von " + zahl1 + " und " + zahl2 + " ist: " + ergebnis + "<br>";
+        document.getElementById("ausgabe").innerHTML = msg;
+        // alert("Hello");
+        // console.log('es funkeniert');
+    </script>
+</body>
+</html>

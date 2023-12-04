@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+</head>
+<body>
+   <h2>The Grade Assigner</h2>
+   <p id="ausgabe">Output</p>
+   <script>
+      function assignGrade(zahl) {
+         if (zahl == 1) return "A";
+         else if (zahl == 2) return "B";
+         else if (zahl == 3) return "C";
+         else if (zahl == 4) return "D";
+         else if (zahl == 5) return "E";
+         else if (zahl == 6) return "F";
+      }
+
+      let msg = "<br>";
+      msg += assignGrade(6) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += assignGrade(5) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += assignGrade(4) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += assignGrade(3) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += assignGrade(2) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      msg += assignGrade(1) + "<br>";
+      document.getElementById("ausgabe").innerHTML = msg;
+      
+   </script>
+</body>
+</html>

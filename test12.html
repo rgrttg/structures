@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+</head>
+<body>
+   <h2>The Grade Assigner</h2>
+   <p id="output">Output</p>
+   <script>
+      function assignGrade(zahl) {
+         if (zahl >= 90) return "A";
+         else if (zahl >= 80) return "B";
+         else if (zahl >= 70) return "C";
+         else if (zahl >= 60) return "D";
+         else if (zahl >= 50) return "E";
+         else if (zahl >= 40) return "F";
+      }
+      for (let l=60; l <= 100; l++) {
+         let note = assignGrade(l);
+         console.log("Für " + l + " erhälst Du eine " + note);
+      }
+   </script>
+</body>
+</html>

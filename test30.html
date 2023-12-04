@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test</title>
+</head>
+<body>
+   <h2>The Word Guesser</h2>
+   <p id="output">Output</p>
+   <script>
+      let hidden = ['R','A','T','E','S','P','A','S','S'];
+      let show = ['_','_','_','_','_','_','_','_','_',];
+      function guessLetter(buchstabe) {
+         for (let l=0; l < hidden.length; l++) {
+            if (buchstabe == hidden[l]) {
+               show[l] = buchstabe;
+            }
+            else {
+            }
+         }
+         console.log(show);
+      }
+      guessLetter("A");
+      guessLetter("E");
+      guessLetter("S");
+   </script>
+</body>
+</html>
